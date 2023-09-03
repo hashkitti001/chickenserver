@@ -38,9 +38,6 @@ def start_server():
 # GUI logic
 window = Tk()
 window.title("Chicken Server")
-bg_Image = PhotoImage(file="bgimage.jpeg")
-bg_label = Label(window, image=bg_Image)
-bg_label.place(relwidth=1, relheight=1)
 greeting = Label(text="Enter directory path")
 text_field = Entry(width="30")
 # Bind the button to the start_server function
@@ -49,4 +46,5 @@ message = Label(text="To close the server, just close the window")
 greeting.pack()
 text_field.pack()
 submit.pack()
+message.pack()
 window.mainloop()
